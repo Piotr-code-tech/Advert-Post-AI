@@ -1,0 +1,9 @@
+ .TextArea {
+      width: 100%;
+      height: auto;
+      resize: none;
+      font-size: 1.25em;
+      font-family: Lato;
+      color: #434651;
+      border-radius: 0.375rem;
+ }

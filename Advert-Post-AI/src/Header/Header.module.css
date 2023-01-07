@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.headerBackground {
+    top: 0px;
+    margin: 0px;
+    border: 0px;
+    background: linear-gradient(90deg,#daae51,#d53369);
+    position: absolute;
+    width: 100vw;
+    height: 19em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+}
+
+.header {
+    font-family: Lato;
+    font-size: 3em;
+    color: ghostwhite;
+    margin: 1em 0px 5px 0px;
+    padding: 0px;
+}
+
+.description {
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+    color: ghostwhite;
+    margin: 10px;
+    padding: 0px;
+}

@@ -1,0 +1,22 @@
+
+.postGeneratorBackground{
+    width: 65vw;
+    height: 40vh;
+    background: white;
+    z-index: 10;
+    margin-top: 12em;
+    margin-left: 17%;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
