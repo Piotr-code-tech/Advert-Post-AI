@@ -1,0 +1,18 @@
+.shareButton {
+    width: 10em;
+    height: 3em;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 0.375rem;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Lato;
+    color: ghostwhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 20px;
+    background-color: forestgreen;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "advert-post-ai",
+  "version": "1.0.0",
+  "description": "Advert-Post-AI",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr-code-tech/Advert-Post-AI.git"
+  },
+  "author": "Piotr Kowalski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Piotr-code-tech/Advert-Post-AI/issues"
+  },
+  "homepage": "https://github.com/Piotr-code-tech/Advert-Post-AI#readme"
+}
