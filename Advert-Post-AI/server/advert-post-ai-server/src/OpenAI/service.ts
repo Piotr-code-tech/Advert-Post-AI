@@ -1,5 +1,5 @@
 const { Configuration, OpenAIApi } = require("openai");
-import {uniqueKey }from "../../../uniqueKey";
+import {uniqueKey }from "../../../uniqueKey/uniqueKey";
 
 const configuration = new Configuration({
     apiKey: uniqueKey
