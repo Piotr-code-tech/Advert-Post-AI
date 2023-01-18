@@ -2,7 +2,7 @@ import styles from "./GenerateButton.module.css"
 import axios from "axios";
 
 async function generateAdText(productDescription: string) {
-    console.log(productDescription);
+
     try {
         return await axios.post('http://localhost:3333/content/text',
             {
@@ -15,22 +15,27 @@ async function generateAdText(productDescription: string) {
         //return data;
     }
     catch (error){
-        console.log(error);
+        console.error(error);
     }
     return;
 }
 
 const GenerateButton = (props:{
-    isTextLengthAcceptable: boolean;
-    productDescription: string;
-    setIsPostGeneratorVisible: (state:boolean) => void;
-    setAdText: (text: string) => void;
+    isTextLengthAcceptable: boolean,
+    productDescription: string,
+    setIsPostGeneratorVisible: (state:boolean) => void,
+    setAdText: (text: string) => void,
+    setIsAvailableTextPost: (state: boolean) => void
 
 }) => {
     async function clickButtonHandler(productDescription: string) {
         props.setIsPostGeneratorVisible(false);
+        props.setIsAvailableTextPost(false);
         generateAdText(productDescription).then(res => {
-            props.setAdText(res?.data);
+            props.setAdText(res?.data.content);
+            if(res?.data.error){
+                alert(res.data.error.error.message);
+            }
             props.setIsPostGeneratorVisible(true);
         });
     }

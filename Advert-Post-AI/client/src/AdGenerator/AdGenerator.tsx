@@ -25,6 +25,7 @@ const AdGenerator = () => {
             <PostGenerator
                 adText={adText}
                 setAdText={setAdText}
+                setIsAvailableTextPost={setIsAvailableTextPost}
             ></PostGenerator>
             {isAvailablePostText &&
                 <PostResult

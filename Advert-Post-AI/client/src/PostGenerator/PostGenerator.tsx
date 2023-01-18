@@ -8,17 +8,18 @@ import HashLoader from "react-spinners/HashLoader";
 const PostGenerator = (props:{
     adText: string,
     setAdText: (text: string) => void,
+    setIsAvailableTextPost: (state: boolean) => void
 }) => {
     const [isTextLengthAcceptable, setIsTextLengthAcceptable] = useState(false);
     const [productText, setProductText] = useState("");
     const [isPostGeneratorVisible, setIsPostGeneratorVisible] = useState(true);
 
     useEffect(() => {
-        console.log(props.adText)
+        //console.log(props.adText)
     },[props.adText]);
 
     useEffect(()=>{
-        console.log(isPostGeneratorVisible);
+        //console.log(isPostGeneratorVisible);
     }, [isPostGeneratorVisible])
 
     return(
@@ -36,6 +37,7 @@ const PostGenerator = (props:{
                             productDescription={productText}
                             setIsPostGeneratorVisible={setIsPostGeneratorVisible}
                             setAdText={props.setAdText}
+                            setIsAvailableTextPost={props.setIsAvailableTextPost}
                         ></GenerateButton>
                 </div>
             </div>}
