@@ -1,8 +1,11 @@
 import React from 'react';
-import AdGenerator from "./AdGenerator/AdGenerator";
+import AdGenerator from "./components/AdGenerator/AdGenerator";
+import {Layout} from "./components/Layout/Layout";
 
 function App() {
-  return (<AdGenerator></AdGenerator>);
+  return (<Layout>
+    <AdGenerator />
+  </Layout>);
 }
 
 export default App;
