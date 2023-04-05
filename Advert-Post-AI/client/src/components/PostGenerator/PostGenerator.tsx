@@ -14,13 +14,13 @@ const PostGenerator: FC<Props> = ({setAdText}) => {
     const [isTextLengthAcceptable, setIsTextLengthAcceptable] = useState(false);
     const [productText, setProductText] = useState("");
     const [isPostGeneratorVisible, setIsPostGeneratorVisible] = useState(true);
-    const generateAddHandler = () => {
+
+    const generateAddHandler = async () => {
         setIsPostGeneratorVisible(false);
-        generateAdText(productText).then(data => {
-            setAdText(data.content);
-            setIsPostGeneratorVisible(true);
-        });
-    }
+        const data = await generateAdText(productText);
+        setAdText(data.content);
+        setIsPostGeneratorVisible(true);
+        };
 
     return(
         <div>
