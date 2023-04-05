@@ -1,0 +1,42 @@
+.shareButton {
+    width: 13em;
+    height: 3em;
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 0.375rem;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Lato;
+    color: ghostwhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.buttonIcon {
+    font-size: 40px;
+}
+.facebook {
+    color: #1877f2;
+}
+
+.instagram {
+    border-radius: 20%;
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+}
+
+.linkedin {
+    color: #0077b5;
+}
+
+.twitter {
+    color: #1da1f2;
+}
+
+.buttonIcon:hover {
+    transform: scale(1.2);
+}

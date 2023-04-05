@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "../../../Server/advert-post-ai-server/node_modules",
+    ".//advert-post-ai-server/test", "dist", "**/*spec.ts"]
+}
